@@ -1,0 +1,157 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    border: none;
+  }
+
+  body {
+    margin: 0 auto;
+    max-width: 1024px;
+    font-weight: 300;
+    letter-spacing: .05em;
+    background-color: #fff;
+  }
+
+  header {
+    padding-bottom: 10%;
+    margin-bottom: 1%;
+    text-align: center;
+  }
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+main {
+    border-top: solid 3px black;
+    padding: 25px;
+}
+
+legend {
+    font-weight: 400;
+    font-size: large;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+form {
+    border-top: solid 2px black;
+}
+
+label{}
+
+input::placeholder {
+    text-align: right;
+    padding-right: 1em;
+}
+
+textarea {
+    height: 5em;
+    width: 100%;
+    background-color: #f7f7f7;
+    margin: 1em 0 1em 0;
+}
+
+button {
+    color: #fff;
+    background: teal;
+    text-align: center;
+    width: 100%;
+    height: 5em;
+    margin: 1em 0 1em 0;
+}
+
+footer {
+    font-size: small;
+    text-align: center;
+}
+
+#newsletter input[type=checkbox],
+#newsletter input[type=radio] {
+    margin-right: .5em;
+    margin-bottom: 1em;
+}
+
+label,
+footer,
+#signup p {
+    color: #7c7c7c;
+}
+
+input,
+select {
+    background-color: #f7f7f7;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.zip {
+    width: 40%;
+}
+
+#signup {
+    padding: 25px;
+}
+
+#signup h2{
+    font-size: 1.3em;
+}
+
+#top {
+    background: #001861;
+    padding: 1em;
+    font-size: .8em;
+}
+
+#contact {
+    border-bottom: solid 2px black;
+    padding-bottom: 1em;
+    margin-bottom: 2em;
+}
+
+#contact input,
+#state {
+    width: 100%;
+    height: 3.5em;
+    margin-bottom: 2em;
+}
+
+@media (min-width: 768px)  {
+
+    main {
+        padding: 25px 10em;
+    }
+
+    label {
+        padding-right: 1.1em;
+    }
+
+    textarea,
+    button {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;      
+        }
+
+    .flex {
+        flex-direction: row;
+    }
+
+    #contact input,
+    #state {
+    width: 100%;
+    height: 3.5em;
+    margin-bottom: 2em;
+}
+
+    .zip {
+        width: 25%;
+    }
+  }
