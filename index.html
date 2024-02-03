@@ -21,7 +21,10 @@
         </div>
         </header>
     
+        
     <main>
+
+        <div id="bottom-border"></div>
 
         <form>
             <fieldset id="contact">
@@ -57,22 +60,24 @@
                 </select>
                 </div>
                 <div class="flex zip">
-                <label for="zip">Zip Code</label>
+                <label for="zip" id="zip-label">Zip Code</label>
                 <input type="number" id="zip" name="user-zip">
                 </div>
             </fieldset>
 
             <fieldset id="newsletter">
                 <legend>Newsletter</legend>
+                    <div class="box">
                     <p>Select the newsletters you would like to receive</p><br>
                         <input type="checkbox" id="html-news" value="html-news" name="news"><label for="html-news">HTML News</label><br>
                         <input type="checkbox" id="css-news" value="css-news" name="news"><label for="css-news">CSS News</label><br>
                         <input type="checkbox" id="js-news" value="js-news" name="news"><label for="js-news">Javascript News</label><br>
-                        
+                    </div>
+                    <div class="box">
                     <label>Newsletter format</label><br>
                         <input type="radio" id="html-form" value="html-form" name="format"><label for="html-form">HTML</label><br>
                         <input type="radio" id="plain-form" value="plain-form" name="format"><label for="plain-form">Plain Text</label><br>
-            
+                    </div>
                     <label for="topics">Other topics you'd like to hear about</label>
                     <textarea id="topics" name="topics"></textarea>
                     <button type="submit">Sign Up</button>
